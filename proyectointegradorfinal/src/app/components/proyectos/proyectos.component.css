@@ -1,0 +1,15 @@
+#card_proyectos:hover{
+    transform: scale(1.1);
+    
+    }
+
+    @media (max-width: 425px){
+  
+        .card-title .card-text{
+            font-size: 0.5rem;
+            text-align: center;
+        }
+    
+
+    
+    }

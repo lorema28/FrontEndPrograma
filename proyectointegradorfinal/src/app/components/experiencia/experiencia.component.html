@@ -1,0 +1,101 @@
+<!-- main -->
+
+<div class="container text-center">
+
+  <div class="row">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10">
+
+
+      <!--experiencia-->
+
+      <div class="card w-100 mb-3 mt-3  bg-dark " style="list-style: none; text-align:left;  border-color: transparent; box-shadow: 5px 5px 10px  rgba(29, 29, 28, 0.782);" id="perspectiva">
+
+        
+       
+        <h3 class="card-title p-3 mt-3 " style="text-align: left; color: #f7f19c ; margin-left: 2rem;">EXPERIENCIA</h3>
+ 
+
+        <div class="row">
+          <div class="col-md-9 g-3 ">
+            <table class="table " style="color: aliceblue;">
+              <tbody>
+                  <tr *ngFor="let Experiencia of expe">
+                      <td>
+                          {{Experiencia.nombreE}}
+                      </td>
+                      <td>{{Experiencia.descripcionE}}</td>
+                      <td *ngIf="isLogged">
+                          <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                              <i class="bi bi-pencil-fill"></i></button>
+                      </td>
+                      <td *ngIf="isLogged">
+                          <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                              <i class="bi bi-trash-fill"></i></button>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+
+  <!-- <ul>
+              <li class="text text-white p-3"><i class="fa-solid fa-person-digging"></i> Arquitecta consultora </li>
+              <li class="text-white">Independiente.</li><i class="bi bi-pencil-fill"></i>
+              <small class="text-white">Desde 2014-actualidad</small>
+              <li>
+                <hr>
+              </li>
+            </ul>-->
+          <!--<ul>
+              <li class="text text-white p-3"><i class="fa-solid fa-person-digging"></i> Inspección de Obras</li>
+              <li class="text-white">Independiente.</li>
+              <small class="text-white">Desde 2014-actualidad</small>
+              <li>
+                <hr>
+              </li>
+            </ul>
+            <ul>
+              <li class="text text-white p-3"><i class="fa-solid fa-pen-ruler"></i> Dibujante</li>
+              <li class="text-white"><small> Elaboración de presupuestos, Elaboración planos arquitectónicos,
+                  Infografía, maquetería virtual, animación.</small></li>
+              <small class="text-white">Desde 2014-actualidad</small>
+              <li>
+                <hr>
+              </li>
+            </ul>-->  
+   
+
+          </div>
+          <div class="col-md-3" style="text-align: center;">
+            <div class="row">
+              <div class="col-ms-6">
+                <button type="button" class="btn btn-warning" routerLink="/nuevaexpe" *ngIf="isLogged">
+                  Nueva Experiencia
+              </button>
+            <img src="../../../assets/constructor.png" alt="imagengrupal" class="img-fluid">
+          </div>
+        
+            <div class="col-ms-6">
+         <!-- <div style="width:500px;max-width:100%;" style="margin: 2rem;" >
+              <div style="height:0;padding-bottom:56.2%;position:relative;"><iframe width="500" height="281"
+                  style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0"
+                  src="https://imgflip.com/embed/7gwnx0"></iframe></div>
+              <p><a href="https://imgflip.com/gif/7gwnx0" class="gif">Proyectos Arquitectónicos</a></p>
+            </div>-->
+          </div>
+          </div>
+          </div>
+
+
+         
+        </div>
+      </div><!--experiencia-->
+
+
+    </div>
+    <div class="col-md-1">
+
+    </div>
+  </div>
+</div>

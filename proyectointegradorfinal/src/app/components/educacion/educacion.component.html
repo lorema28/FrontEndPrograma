@@ -1,0 +1,130 @@
+<div class="container text-center">
+
+  <div class="row">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10">
+
+      <!-- Estudios-->
+ 
+        <div class="card mt-3 p-3  bg-dark" id="education" style="list-style: none; box-shadow: 5px 5px 10px  rgba(29, 29, 28, 0.782)">
+
+          <div class="row">
+   <div class="col-md-8">
+          <h3 class="card-title mt-3" style="text-align:left;color: #f7f19c ; margin-left: 2rem;">EDUCACION</h3>
+        </div>   
+        <div class="col-md-4">
+          <div class=" container fluid " style="align-items:center;">
+            <button type="button" class="btn btn-warning" routerLink="/nuevaeduc" *ngIf="isLogged">
+              Agregar Educacion
+          </button>
+        </div>
+        </div>
+        
+     
+      </div>
+
+          <div class="row ">
+
+            <div class="col-md-3 " style="text-align:center; ">
+              <a href="https://www.uide.edu.ec/" target="_blank"><img src="./assets/logo-color-1.png" alt="logouide"
+                  class="uide"></a>
+            </div>
+            
+            <div class="col-md-9" style="text-align: left; margin-right: 2rem;">
+         
+
+              <table class="table" style="color: aliceblue;">
+                <tbody>
+                    <tr *ngFor="let Educacion of educacion">
+                        <td>
+                            {{Educacion.nombreE}}
+                        </td>
+                        <td>{{Educacion.descripcionE}}</td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-light" routerLink="/editeduc/{{Educacion.id}}">
+                                <i class="bi bi-pencil-fill"></i></button>
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                                <i class="bi bi-trash-fill"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+             <!--<ul>
+                <li class="text text-white">
+                  <p> UNIVERSIDAD INTERNACIONAL DEL ECUADOR</p>       <i class="bi bi-pencil-fill"></i>
+                <li class="text text-white "><small> Arquitecta</small></li>       <i class="bi bi-pencil-fill"></i>
+                <li class="text text-white"><small> 1999-2005</small></li>       <i class="bi bi-pencil-fill"></i>
+                <li>
+                  <hr>
+                </li>
+              </ul>--> 
+            </div>
+          </div>
+
+        <!-- <div class="row">
+            <div class="col-4 " style="text-align: center;">
+            
+                   
+        
+
+              <a href="https://www.uba.ar/#/" target="_blank"><img src="./assets/logouba.png" alt="logouide"
+                  class="logosU"></a>
+            </div>
+            <div class="col-8 " style="text-align: left;">
+              <ul>
+                <li class="text text-white" style="text-align: justify;">
+                  <p> UNIVERSIDAD DE BUENOS AIRES</p>
+                </li>
+                <li class="text-white"><small> Especialización en gestión de Proyectos y Dirección de Obras.
+                    GeO.</small></li>
+                <li class="text-white"><small> Abril - Diciembre 2019</small></li>
+                <li>
+                  <hr>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-4" style="text-align: center;">
+              <a href="https://www.credly.com/badges/847af628-88ef-4190-88c9-50295cb82626/public_url" target="_blank"><img src="../../../assets/bootcamp-desarrollador-web-front-end.1.png" alt="logouide"
+                  class="logosU"></a>
+            </div>
+            <div class="col-8" style="text-align: left;">
+           <ul>
+                <li class="text text-white">
+                  <p>MINDHUB + ARGENTINA PROGRAMA</p>
+                <li class="text-white"><small> Bootcamp Desarrollador Web Front End</small></li>
+                <li class="text-white"><small>Marzo del 2022</small></li>
+                <li>
+                  <hr>
+                </li>
+              </ul>
+            </div>
+
+        
+           
+
+          </div>--> 
+
+
+        </div>
+
+     <!-- Estudios-->
+
+
+    </div>
+    <div class="col-md-1">
+           
+
+     
+
+    </div>
+
+  </div>
+</div>

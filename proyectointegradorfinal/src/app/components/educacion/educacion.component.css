@@ -1,0 +1,51 @@
+
+.logosU{
+    width: 8rem!important;
+    height: 8rem!important;
+}
+
+.logosU:hover{
+  transform: scale(1.1);
+}
+
+.uide{
+    width: 10rem!important;
+    height: 5rem!important;
+}
+
+.uide:hover{
+  transform: scale(1.1);
+}
+
+ul{
+    list-style: none;
+  }
+  
+  hr{
+    height: 2px;
+    background-color: rgb(251, 251, 251);
+    width: 100%;
+  }
+  @media (max-width: 425px){
+  
+
+
+ .uide{
+  width: 5rem!important;
+  height: 4rem!important;
+}
+
+.logosU{
+  width: 5rem!important;
+  height: 5rem!important;
+}
+
+#education, .text {
+
+text-align: left;
+font-size: 0.8rem!important;
+
+
+}
+
+}

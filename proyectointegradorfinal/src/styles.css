@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans', sans-serif;
+     /* outline: 1px solid #ea1212;*/
+     
+}
+
+body{
+    height: 100vh;
+
+  background-image:linear-gradient(rgba(28, 45, 44, 0.538), rgba(38, 64, 72, 0.338)), url(assets/código-datos-argentina-banner-1-2.webp);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x:hidden;
+
+}
+
+header{
+
+   background-color:#000;
+   min-height:10vh ; 
+
+}
+
+h1{
+    
+  text-align: center;
+  color:antiquewhite;
+  
+         
+}
+
+main{
+    min-height:80vh ; 
+
+}
+
+footer{
+background-color:#000  ;
+min-height: 10vh ; 
+width: 100%;
+box-shadow: 5px 5px 10px  rgba(29, 29, 28, 0.782)
+
+}
+
+.admin{
+  font-size:1.5rem;
+ }
+ 
+
+
+
+
+
+
+
+
+@media (max-width: 425px){
+  
+    #aglogo{
+      width: 12rem!important;
+      height: 2.5rem!important;
+    }
+
+
+.body{
+margin-right: 0%;
+    overflow-x:hidden
+  }
+
+
+}

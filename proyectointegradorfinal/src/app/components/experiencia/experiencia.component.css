@@ -1,0 +1,34 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+ul{
+    list-style: none;
+  }
+
+  .img-fluid{
+    width: 200px;
+    height: 200px;
+  
+}
+hr{
+    height: 2px;
+    background-color: rgb(251, 251, 251);
+    width: 100%;
+  }
+
+  .gif {
+    color:white;
+text-decoration:  none;
+  }
+
+ .table{
+    margin-left: 3rem;
+  }
+ /* #perspectiva{
+    background-image:linear-gradient(rgba(17, 16, 16, 0.75), rgba(10, 10, 10, 0.338)), url(../../../assets/perspectiva.png);
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    background-size: cover;
+    position: relative;
+    
+  }*/

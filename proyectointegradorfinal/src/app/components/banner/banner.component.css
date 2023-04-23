@@ -1,0 +1,30 @@
+.banner{
+    background-image:linear-gradient(rgba(17, 16, 16, 0.75), rgba(10, 10, 10, 0.338)), url("../../../assets/desarrollo-web-programacion-laptop-smartphone_73903-163.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   /* background-attachment: fixed;*/
+    height: 70vh;
+    margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  box-shadow: 5px 5px 10px  rgba(29, 29, 28, 0.782);
+}
+
+.rounded-circle{
+ 
+border-color: rgb(240, 235, 235);
+border-style:double;
+border-width: 5px;
+box-shadow: 3px 3px 3px grey;
+
+
+}
+
+@media(max-width: 575px){
+
+
+}
