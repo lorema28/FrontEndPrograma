@@ -2,6 +2,7 @@
 .logosU{
     width: 8rem!important;
     height: 8rem!important;
+    align-items: center!important;
 }
 
 .logosU:hover{
@@ -9,7 +10,7 @@
 }
 
 .uide{
-    width: 10rem!important;
+    width: 5rem!important;
     height: 5rem!important;
 }
 
@@ -28,12 +29,25 @@ ul{
   }
   @media (max-width: 425px){
   
-
-
- .uide{
-  width: 5rem!important;
-  height: 4rem!important;
+.table{
+  margin: 0;
+  padding: auto;
 }
+
+.uide{
+  display: none;
+}
+
+.card-title{
+  text-align: center;
+  align-items: center;
+}
+
+ /*.uide{
+  width: 2rem!important;
+  height: 2rem!important;
+  
+}*/
 
 .logosU{
   width: 5rem!important;

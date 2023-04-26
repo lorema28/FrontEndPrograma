@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 
+
 ul{
     list-style: none;
   }
@@ -21,8 +22,30 @@ text-decoration:  none;
   }
 
  .table{
-    margin-left: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
+
+  @media (max-width: 425px){
+  
+    .img-fluid{
+      display: none;
+    }
+
+
+
+
+  
+.table{
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+   font-size: 0.8rem!important;
+
+   }
+   
+   }
+
  /* #perspectiva{
     background-image:linear-gradient(rgba(17, 16, 16, 0.75), rgba(10, 10, 10, 0.338)), url(../../../assets/perspectiva.png);
     background-position: center;

@@ -1,0 +1,256 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans', sans-serif;
+     /* outline: 1px solid #ea1212;*/
+     
+}
+
+body{
+    height: 100vh;
+width: 100%!important;
+    background-image:linear-gradient(rgba(28, 45, 44, 0.538), rgba(38, 64, 72, 0.338)), url(assets/código-datos-argentina-banner-1-2.webp);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x:hidden;
+
+}
+
+header{
+
+   background-color:#000;
+   min-height:10vh ; 
+
+}
+
+main{
+    min-height:80vh ; 
+
+ 
+}
+
+footer{
+background-color:#000  ;
+min-height: 10vh ; 
+width: 100%;
+
+}
+
+.navbar {
+    background-color:#000 ;
+    
+}
+
+.navbar-toggler {
+  --bs-text-opacity: 1;
+	color: bisque!important;
+  border-color:rgb(142, 139, 139);
+    transform: scale(1.2);
+}
+.navbar-toggler-icon{
+
+  color:rgb(142, 139, 139);
+  border-color:rgb(142, 139, 139);
+
+}
+
+.banner{
+    background-image:linear-gradient(rgba(17, 16, 16, 0.75), rgba(10, 10, 10, 0.338)), url("../proyectointegradorfinal/src/assets/desarrollo-web-programacion-laptop-smartphone_73903-163.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   /* background-attachment: fixed;*/
+    height: 70vh;
+    margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.rounded-circle{
+ 
+border-color: aliceblue;
+border-style: groove;
+border-width: 5px;
+
+
+}
+
+ul{
+  list-style: none;
+}
+
+hr{
+  height: 2px;
+  background-color: rgb(251, 251, 251);
+  width: 100%;
+}
+
+h1{
+    
+    text-align: center;
+    color:antiquewhite;
+    
+           
+}
+
+.progress-:hover{
+    animation-duration: 5s ease;
+}
+
+.list-group-item.active{
+  background-color:rgb(142, 139, 139);
+  border-color:rgb(142, 139, 139);
+}
+
+/*.list-group-item:first-child{
+  border-top-left-radius:0%;
+  border-top-right-radius:0%;
+}
+.list-group-item:last-child{
+border-bottom-right-radius:0%;
+border-bottom-left-radius: 0%;
+}*/
+.list-group {
+   --bs-list-group-bg:transparente;
+   --bs-list-group-border-color: transparente;
+}
+
+.fa-brands.fa-lg:hover {
+	--bs-text-opacity: 1;
+/*--fa-solid:var(--fa-solid);*/
+color: bisque!important;
+transform: scale(1.2);
+
+}
+
+.fa-user-lock.fa-lg:hover {
+    --bs-text-opacity: 1;
+	color: bisque!important;
+    transform: scale(1.2);
+}
+
+
+/*.login{
+
+
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}*/
+
+/*.login2{
+
+    height: 500px;
+    width: 500px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/
+
+
+
+/*.fondopantalla{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(28, 45, 44, 0.538), rgba(38, 64, 72, 0.338)), url(assets/código-datos-argentina-banner-1-2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}*/
+
+
+#card_proyectos:hover{
+transform: scale(1.1);
+
+
+}
+
+.list-group-item{
+float: left;
+}
+
+#programadora{
+    width: 250px;
+    height: 250px;
+  
+}
+
+
+
+.admin{
+ font-size:1.5rem;
+}
+
+.link{
+text-decoration: none;
+color: white;
+}
+
+.logosU{
+    width: 8rem!important;
+    height: 8rem!important;
+}
+
+.logosU:hover{
+  transform: scale(1.1);
+}
+
+.uide{
+    width: 10rem!important;
+    height: 5rem!important;
+}
+
+.uide:hover{
+  transform: scale(1.1);
+}
+
+
+
+  @media (max-width: 425px){
+  
+    #aglogo{
+      width: 12rem!important;
+      height: 2.5rem!important;
+    }
+
+
+.body{
+margin-right: 0%;
+    overflow-x:hidden
+  }
+
+ .uide{
+  width: 5rem!important;
+  height: 4rem!important;
+}
+
+.logosU{
+  width: 5rem!important;
+  height: 5rem!important;
+}
+
+#education, .text {
+
+text-align: left;
+font-size: 0.8rem!important;
+
+
+}
+
+}

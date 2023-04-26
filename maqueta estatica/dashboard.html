@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+ 
+  <script src="https://kit.fontawesome.com/953985224b.js" crossorigin="anonymous"></script>
+  <title>Panel</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./assets/arg-programa.ico" type="image/x-icon">
+
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/diseño_completo.png" alt="logoArgentinaPrograma" class="w-100" id="aglogo" /></a>
+
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-grow-0 " id="navbarSupportedContent" >
+        
+      <ul class="list-group list-group-horizontal ">
+    
+        <li class="list-group-item">
+
+          <a href="./login.html" ><i class="fa-solid fa-user fa-lg text-white"></i></a>
+        </li>
+      </ul>
+</div>
+
+    </div>
+  </nav>
+
+  </header>
+
+  <main class="container-fluid " >
+    
+<div class="row">
+
+    <div class="col-2 p-0 "  >
+
+      <div class="list-group" style="background-color: aliceblue; justify-content: space-between;" id="list-tab" role="tablist">
+        
+        <a class="list-group-item list-group-item-action mt-3" id="perfil" data-bs-toggle="list" href="#list-perfil" role="tab" aria-controls="perfil">
+          <img src="./assets/foto_perfil.jpg" alt="fotoperfil" class="rounded-circle img-fluid" />
+
+        </a>
+        <a class="list-group-item list-group-item-action active" id="banner" data-bs-toggle="list" href="#list-banner" role="tab" aria-controls="banner">
+          <i class="fa-solid fa-image"></i>  Banner
+        </a>
+        <a class="list-group-item list-group-item-action" id="redessociales" data-bs-toggle="list" href="#list-redessociales" role="tab" aria-controls="list-redessociales">
+          <i class="fas fa-project-diagram me-2"></i>Redes Sociales
+        </a>
+        <a class="list-group-item list-group-item-action" id="educacion-" data-bs-toggle="list" href="#list-educacion" role="tab" aria-controls="list-educacion">
+          <i class="fa-solid fa-user-graduate"></i>  Educación
+        </a>
+        <a class="list-group-item list-group-item-action" id="experiencia" data-bs-toggle="list" href="#list-experiencia" role="tab" aria-controls="list-experiencia">
+          <i class="fa-solid fa-pen-ruler"></i> Experiencia
+        </a>
+        <a class="list-group-item list-group-item-action" id="skills" data-bs-toggle="list" href="#list-skills" role="tab" aria-controls="list-skills">
+          <i class="fa-solid fa-bars-progress"></i> Skills
+        </a>
+        <a class="list-group-item list-group-item-action" id="proyectos" data-bs-toggle="list" href="#list-proyectos" role="tab" aria-controls="list-proyectos">
+          <i class="fa-solid fa-file"></i> Proyectos
+        </a>
+        <a class="list-group-item list-group-item-action text-danger mb-5" id="logout" data-bs-toggle="list" href="#list-logout" role="tab" aria-controls="list-logout">
+          <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </a>
+      </div>
+  
+        </div>         
+
+        <div class="col-1">
+
+        </div>
+    
+<div class="col-8 mt-3 p-3 mb-3 " style="background-color: rgba(7, 7, 7, 0.881); box-shadow: 5px 5px 20px rgba(255, 253, 253, 0.773); border-radius: 20px 20px 20px 20px;">
+
+
+  <!--banner-->
+  <div class="tab-content"   id="nav-tabContent"  >
+
+  <div class="tab-pane fade show active" id="list-banner" role="tabpanel" aria-labelledby="banner">
+  
+    <h5 class="card-title text-white mb-3 mt-3">Editar Banner</h5>
+      
+              <div class="mb-3">
+                <label for="formFile" class="form-label text-white">Cargar foto </label>
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+              </div>
+           
+          <div class="modal-footer p-3"> 
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-warning">Guardar Cambios</button>
+          </div>
+  
+        </div>
+</div><!--banner-->
+
+  <!--perfil-->
+  <div class="tab-content"   id="nav-tabContent"  >
+
+    <div class="tab-pane fade " id="list-perfil" role="tabpanel" aria-labelledby="perfil">
+    
+      <h5 class="card-title text-white mb-3 mt-3">Editar Perfil</h5>
+               <div class="mb-3">
+                <label for="formFile" class="form-label text-white">Subir foto de perfil </label>
+                <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label text-white">Acerca de Mi</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+             
+            <div class="modal-footer p-3">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-warning">Guardar Cambios</button>
+            </div>
+    
+          </div>
+  </div><!--perfil-->
+
+  
+  <!--redes-->
+  <div class="tab-content"   id="nav-tabContent"  >
+
+    <div class="tab-pane fade " id="list-redessociales" role="tabpanel" aria-labelledby="list-redessociales">
+    
+      <h5 class="card-title text-white mb-3 mt-3">Agregar Red Social</h5>
+      <div class="mb-3">
+      <label for="exampleDataList " class="form-label text-white">Agregar Sitio Web</label>
+      <input class="form-control" type="text" placeholder="Dirección de Sitio Web" aria-label="default input example">
+      </div>
+      <div class="modal-footer p-3">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-warning">Guardar Cambios</button>
+      </div>
+</div>
+    
+  </div><!--redes-->
+
+    <!--educacion-->
+    <div class="tab-content"   id="nav-tabContent"  >
+
+      <div class="tab-pane fade " id="list-educacion" role="tabpanel" aria-labelledby="list-educacion">
+      
+        <h5 class="card-title text-white mt-3 mb-3">Editar Educación</h5>
+          
+        <label for="exampleFormControlTextarea1" class="form-label text-white"> Agregar nombre de la Institución educativa</label>
+        <input class="form-control" type="text" placeholder="Escuela" aria-label="default input example">
+
+        <label for="exampleFormControlTextarea1" class="form-label text-white">Agregar Título</label>
+        <input class="form-control" type="text" placeholder="Título" aria-label="default input example">
+
+ 
+        <div class="modal-footer p-3">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-warning">Guardar Cambios</button>
+        </div>
+  
+      
+            </div>
+    </div><!--educacion-->
+
+   <!--experiencia-->
+   <div class="tab-content"   id="nav-tabContent"  >
+
+    <div class="tab-pane fade " id="list-experiencia" role="tabpanel" aria-labelledby="list-experiencia">
+
+      <h5 class="card-title text-white mt-3 mb-3">Editar Experiencia</h5>
+       
+        <div class="mb-3">
+          
+          <label for="exampleFormControlTextarea1" class="form-label text-white"> Empresa</label>
+          <input class="form-control" type="text" placeholder="Agregar lugar de trabajo" aria-label="default input example">
+  
+          <label for="exampleFormControlTextarea1" class="form-label text-white">Puesto</label>
+          <input class="form-control" type="text" placeholder="Agregar puesto de trabajo " aria-label="default input example">
+  
+          <label for="exampleFormControlTextarea1" class="form-label text-white">Descripción</label>
+          <input class="form-control" type="text" placeholder="Describir actividades desempeñadas " aria-label="default input example">
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+     
+    </div>
+  
+    
+        
+  </div><!--experiencia-->
+
+     <!--skills-->
+     <div class="tab-content"   id="nav-tabContent"  >
+
+      <div class="tab-pane fade " id="list-skills" role="tabpanel" aria-labelledby="list-skills">
+  
+        <h5 class="card-title text-white mt-3 mb-3">Editar Skills</h5>
+
+        <div class="modal-body">
+          <label for="exampleFormControlTextarea1" class="form-label text-white">Habilidades</label>
+          <input class="form-control" type="text" placeholder="Ingresar aquí" aria-label="default input example">
+  
+          <label for="exampleFormControlTextarea1" class="form-label text-white">Porcentaje</label>
+          <input class="form-control" type="text" placeholder="Ingresar aquí" aria-label="default input example">
+  </div>
+  
+        <div class="modal-footer p-3" >
+          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-warning ">Guardar cambios</button>
+        </div>
+  
+       
+      </div>
+    
+      
+          
+    </div><!--skills-->
+  
+
+  <!--proyectos-->
+  <div class="tab-content"   id="nav-tabContent"  >
+
+    <div class="tab-pane fade " id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos">
+      
+      <h5 class="card-title text-white mt-3 mb-3">Editar Proyectos</h5>
+
+
+      <div class="modal-body">
+        
+        <label for="exampleFormControlTextarea1" class="form-label text-white">Agregar Nombre del Proyecto</label>
+        <input class="form-control" type="text" placeholder="Proyecto" aria-label="default input example">
+
+        <label for="exampleFormControlTextarea1" class="form-label text-white">Descripción</label>
+        <input class="form-control" type="text" placeholder="Descripción aquí" aria-label="default input example">
+
+        <label for="exampleFormControlTextarea1" class="form-label text-white">Url Proyecto</label>
+        <input class="form-control" type="text" placeholder="Dirección de sitio del proyecto" aria-label="default input example">
+
+        <div class="mb-3">
+          <label for="formFile" class="form-label text-white" >Subir foto </label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn bg-warning">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+
+
+     
+    </div>
+  
+    
+        
+  </div><!--proyectos-->
+
+
+<div class="col-2">
+
+</div>
+
+</div>
+
+
+<div class="col-1">
+
+</div>
+
+</div>
+
+
+
+  </main>
+
+
+
+
+
+    <footer class="footer ">
+      <div class="container">
+      <div class= "row d-flex  p-3 text-center ">
+        <div class= "col pt-3">
+        <p class="text-white" >Copyright © 2023 LorenArq2009.</p>
+        </div>|
+              </div>
+            </div>
+
+
+
+
+    </footer>
+<!--Javascript Bundle with Popper-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

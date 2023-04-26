@@ -12,14 +12,16 @@
 
   <div class="card d-flex w-100 mb-3 p-3  bg-dark" style=" border-color: transparent; box-shadow: 5px 5px 10px  rgba(29, 29, 28, 0.782);">
 
+    <div class="row" style="align-items: center;">
+      <div class="col-lg-10">
     <h3 class="card-title mt-3" style="text-align: left; color: #f7f19c ; margin-left: 2rem;"> HARD & SOFT SKILLS</h3>
-
-    <div class="col-lg-2">
+  </div>
+    <div class="col-lg-2" style="justify-content: right;">
    
-        <button type="button" routerLink="/newskill" class="btn btn-warning" *ngIf="isLogged">Nueva Skill</button>
+        <button type="button" routerLink="/newskill" class="btn btn-outline-warning" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i></button>
     
     </div>
-
+  </div>
     <div class="row ">
 
       <div class=" text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
@@ -45,11 +47,11 @@
 
         <div >
         <td *ngIf="isLogged">
-          <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+          <button class="btn btn-outline-warning " style="margin: 1rem;" routerLink="/editskill/{{skill.id}}">
               <i class="bi bi-pencil-fill"></i></button>
       </td>
       <td *ngIf="isLogged">
-          <button class="btn btn-danger" (click)="delete(skill.id)">
+          <button class="btn btn-outline-danger " (click)="delete(skill.id)">
               <i class="bi bi-trash-fill"></i></button>
       </td>
     </div>

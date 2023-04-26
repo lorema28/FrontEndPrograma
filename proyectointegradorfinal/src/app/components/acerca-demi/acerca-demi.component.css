@@ -7,7 +7,16 @@
   
 }
 
-
+.rounded-circle{
+ 
+    border-color: rgb(240, 235, 235);
+    border-style:double;
+    border-width: 5px;
+    box-shadow: 3px 3px 3px rgb(7, 7, 7);
+    
+    
+    }
+    
 
 
 
